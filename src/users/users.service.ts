@@ -18,10 +18,10 @@ export class UsersService {
     return user;
   }
   public updateUser(updateUserData: UpdateUserInput): User {
-    const user = this.users.find(
+    const user: User = this.users.find(
       (user) => user.userId === updateUserData.userId,
     );
-    Object.assign(user, updateUserData);
+    Object.assign(user, updateUserData); //update
     return user;
   }
   public getUser(getUserArgs: GetUserArgs): User {

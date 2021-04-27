@@ -16,8 +16,6 @@ export class VideoType {
   sername: string;
   @Field()
   url: string;
-  @Field()
-  owner: string;
   @Field(() => Int)
   price: number;
   @Field({ nullable: true })
