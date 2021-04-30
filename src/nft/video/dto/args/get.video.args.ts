@@ -1,5 +1,5 @@
 import { ArgsType, Field } from '@nestjs/graphql';
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, isString } from 'class-validator';
 
 @ArgsType()
 export class GetVideoArgs {

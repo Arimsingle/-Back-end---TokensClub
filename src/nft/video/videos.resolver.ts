@@ -1,5 +1,5 @@
 import { Resolver, Query, Args, Mutation } from '@nestjs/graphql';
-import { VideoType } from './model/videos.type';
+import { VideoType } from './model/video.type';
 import { VideosService } from './videos.service';
 import { GetVideoArgs } from './dto/args/get.video.args';
 import { GetVideosArgs } from './dto/args/get.videos.args';

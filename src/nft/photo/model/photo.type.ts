@@ -1,7 +1,9 @@
 import { ObjectType, Field, Int } from '@nestjs/graphql';
 
 @ObjectType()
-export class Photo {
+export class PhotoType {
+  @Field()
+  tokenId: string;
   @Field()
   account: string;
   @Field()

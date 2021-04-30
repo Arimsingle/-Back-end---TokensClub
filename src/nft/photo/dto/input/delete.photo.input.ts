@@ -1,8 +1,8 @@
-import { ArgsType, Field } from '@nestjs/graphql';
+import { Field, InputType } from '@nestjs/graphql';
 import { IsNotEmpty } from 'class-validator';
 
-@ArgsType()
-export class GetPhotoArgs {
+@InputType()
+export class DeletePhotoInput {
   @Field(() => String)
   @IsNotEmpty()
   account: string;

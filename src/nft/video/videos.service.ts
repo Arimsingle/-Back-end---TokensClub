@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
-import { VideoType } from './model/videos.type';
+import { VideoType } from './model/video.type';
 import { GetVideoArgs } from '../video/dto/args/get.video.args';
 import { GetVideosArgs } from '../video/dto/args/get.videos.args';
 import { CreateVideoInput } from '../video/dto/input/create.video.input';
